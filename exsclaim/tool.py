@@ -12,7 +12,7 @@ import logging
 import os
 import time
 from abc import ABC, abstractmethod
-from langchain.document_loaders import UnstructuredHTMLLoader
+from langchain_community.document_loaders import UnstructuredHTMLLoader
 from . import caption, journal
 from .utilities import paths
 from .utilities.logging import Printer

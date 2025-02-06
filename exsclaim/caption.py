@@ -2,7 +2,7 @@
 import json
 from .captions import interpret as interpret
 from .captions import regex as regex
-from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from langchain.llms import HuggingFacePipeline
 from langchain import PromptTemplate, LLMChain
