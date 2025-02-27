@@ -7,7 +7,7 @@ import torch.nn as nn
 import torchvision.transforms as T
 from PIL import Image
 from torchvision import models
-
+#from torchvision.models import ResNet50_Weights
 
 class ScaleBarReaderTest:
 
@@ -38,7 +38,7 @@ class ScaleBarReaderTest:
 
     def unit_divide(self, text):
         return text.split()[-1]
-
+ 
     def get_classification_model(
         self, scale_label_recognition_checkpoint, classes, depth, pretrained=True
     ):

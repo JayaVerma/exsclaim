@@ -18,6 +18,7 @@ from scipy.special import softmax
 from skimage import io
 from torch.autograd import Variable
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
+# from torchvision.models import ResNet50_Weights
 
 from .figures.models.crnn import CRNN
 from .figures.models.network import resnet152
@@ -96,8 +97,9 @@ class FigureSeparator(ExsclaimTool):
         )
         # Load scale bar detection model
         # load an object detection model pre-trained on COCO
+        from torchvision.models.detection import FasterRCNN_ResNet50_FPN_Weights
         scale_bar_detection_model = (
-            torchvision.models.detection.fasterrcnn_resnet50_fpn(pretrained=True)
+            torchvision.models.detection.fasterrcnn_resnet50_fpn(weights=FasterRCNN_ResNet50_FPN_Weights.DEFAULT)
         )
         input_features = (
             scale_bar_detection_model.roi_heads.box_predictor.cls_score.in_features

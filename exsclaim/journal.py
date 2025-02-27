@@ -23,6 +23,7 @@ try:
     from selenium.webdriver.support import expected_conditions as EC
     from selenium.webdriver.chrome.options import Options
     from selenium.webdriver.chrome.service import Service
+    from webdriver_manager.chrome import ChromeDriverManager
     from selenium.webdriver.support.ui import WebDriverWait
     from selenium.webdriver.common.by import By
     from selenium.webdriver.support import expected_conditions as EC
@@ -536,8 +537,10 @@ class JournalFamilyDynamic(JournalFamily):
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument("--remote-debugging-port=9222")
         options.binary_location = "/gpfs/fs1/home/avriza/chrome/opt/google/chrome/google-chrome"
-        self.driver = webdriver.Chrome(service=Service('/gpfs/fs1/home/avriza/chromedriver'), options=options)
 
+        # service = Service("/home/j/jayaverma/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver")
+
+        self.driver = webdriver.Chrome(executable_path="/home/j/jayaverma/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver", options=options)
 
         stealth(self.driver,
                 languages=["en-US", "en"],

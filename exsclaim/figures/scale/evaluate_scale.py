@@ -12,6 +12,7 @@ import torchvision.transforms as T
 from PIL import Image
 from torchvision import transforms
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
+from torchvision.models import ResNet50_Weights
 
 import exsclaim.utilities.boxes as boxes
 from exsclaim.figures.models.crnn import CRNN
@@ -19,6 +20,7 @@ from exsclaim.figures.scale.ctc import ctcBeamSearch
 from exsclaim.figures.scale.lm import LanguageModel
 from exsclaim.figures.scale.process import non_max_suppression_malisiewicz
 from exsclaim.utilities.models import load_model_from_checkpoint
+
 
 
 def convert_to_rgb(image):
@@ -87,7 +89,7 @@ def detect_scale_objects(image, scale_bar_detection_checkpoint):
             label is 1 for scale bars and 2 for scale bar labelss
     """
     scale_bar_detection_model = torchvision.models.detection.fasterrcnn_resnet50_fpn(
-        pretrained=True
+        weights=ResNet50_Weights.DEFAULT
     )
     input_features = (
         scale_bar_detection_model.roi_heads.box_predictor.cls_score.in_features
