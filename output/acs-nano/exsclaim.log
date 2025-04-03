@@ -29,3 +29,27 @@ INFO:exsclaim.pipeline:
         
 INFO:exsclaim.tool.JournalScraper:Running Journal Scraper
 
+INFO:exsclaim.journal_1:GET request: https://pubs.acs.org/action/doSearch?AllField=nano&pageSize=100&openAccess=18&accessType=openAccess&Earliest=&SeriesKey=&sortBy=
+INFO:exsclaim.journal_1:GET request: https://pubs.acs.org/action/doSearch?AllField=nanoparticle&pageSize=100&openAccess=18&accessType=openAccess&Earliest=&SeriesKey=&sortBy=
+INFO:exsclaim.tool.JournalScraper:>>> Time Elapsed: 131.49 sec (0 articles)
+
+INFO:exsclaim.tool:Running HTML Scraper
+
+INFO:exsclaim.tool:>>> Time Elapsed: 0.00 sec (0 articles)
+
+INFO:exsclaim.tool.CaptionDistributor:Running Caption Distributor
+
+INFO:exsclaim.tool.CaptionDistributor:>>> Time Elapsed: 0.00 sec (0 captions)
+
+INFO:exsclaim.figure:Running Figure Separator
+
+INFO:exsclaim.figure:>>> Time Elapsed: 0.00 sec (0 figures)
+
+INFO:exsclaim.pipeline:Matching Image Objects to Caption Text
+
+INFO:exsclaim.pipeline:>>> SUCCESS!
+
+INFO:exsclaim.pipeline:Printing Master Image Objects to: /home/j/jayaverma/exsclaim/output/acs-nano/images
+
+INFO:exsclaim.pipeline:>>> SUCCESS!
+

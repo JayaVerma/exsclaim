@@ -13,7 +13,7 @@ import os
 import time
 from abc import ABC, abstractmethod
 from langchain_community.document_loaders import UnstructuredHTMLLoader
-from . import caption, journal
+from . import caption, journal_1
 from .utilities import paths
 from .utilities.logging import Printer
 from langchain.embeddings import HuggingFaceEmbeddings
@@ -106,10 +106,10 @@ class JournalScraper(ExsclaimTool):
     """
 
     journals = {
-        "acs": journal.ACS,
-        "nature": journal.Nature,
-        "rsc": journal.RSC,
-        "wiley": journal.Wiley,
+        "acs": journal_1.ACS,
+        "nature": journal_1.Nature,
+        "rsc": journal_1.RSC,
+        "wiley": journal_1.Wiley,
     }
 
     def __init__(self, search_query):

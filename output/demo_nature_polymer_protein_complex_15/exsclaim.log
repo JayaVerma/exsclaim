@@ -1,0 +1,930 @@
+INFO:exsclaim.pipeline:No exsclaim.json file found, starting a new one.
+INFO:exsclaim.pipeline:
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        @@@@@@@@@@@@@@@@@@@&   /&@@@(   /@@@@@@@@@@@@@@@@@@@
+        @@@@@@@@@@@@@@@ %@@@@@@@@@@@@@@@@@@@ *@@@@@@@@@@@@@@
+        @@@@@@@@@@@@ @@@@@@@@@@@@@@,  .@@@@@@@@ *@@@@@@@@@@@
+        @@@@@@@@@.#@@@@@@@@@@@@@@@@,    @@@@@@@@@@ @@@@@@@@@
+        @@@@@@@&,@@@@@@@@@@@@@@@@@@.    @@@@@@@@@@@@ @@@@@@@
+        @@@@@@ @@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@@@@ @@@@@@
+        @@@@@ @@@@@@@@@@@@@@@@@@@@@    *@@@@@@@@@@@@@@/@@@@@
+        @@@@ @@@@@@@@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@,@@@@
+        @@@ @@@@@@@@@@@@@@@@@@@@@@&    @@@@@@@@@@@@@@@@@ @@@
+        @@@,@@@@@@@@@@@@@@@@@@@@@@*   (@@@@@@@@@@@@@@@@@@%@@
+        @@.@@@@@@@@@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@@@@ @@
+        @@ @@@@@@@@@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@@@@ @@
+        @@ @@@@@@@@@@@@@@@@@@@@@@/   &@@@@@@@@@@@@@@@@@@@ @@
+        @@,@@@@@@@@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@@@@@ @@
+        @@@.@@@@@@@@@@@@@@@@@@@@&   @@@@@@@@@@@@@@@@@@@@@%@@
+        @@@ @@@@@@@@@@@@@@@@@@@@@  /@@@@@@@@@@@@@@@@@@@@ @@@
+        @@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@
+        @@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*@@@@@
+        @@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@
+        @@@@@@@@ @@@@@@@@@@@@    @@@@@@@@@@@@@@@@@@@ @@@@@@@
+        @@@@@@@@@.(@@@@@@@@@@     @@@@@@@@@@@@@@@@ @@@@@@@@@
+        @@@@@@@@@@@@ @@@@@@@@@#   #@@@@@@@@@@@@ /@@@@@@@@@@@
+        @@@@@@@@@@@@@@@ ,@@@@@@@@@@@@@@@@@@@ &@@@@@@@@@@@@@@
+        @@@@@@@@@@@@@@@@@@@@   ,%@@&/   (@@@@@@@@@@@@@@@@@@@
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        
+INFO:exsclaim.tool.JournalScraper:Running Journal Scraper
+
+INFO:exsclaim.journal:GET request: https://www.nature.com/search?q=polymer protein complex&&&date_range=&journal=&order=relevance
+INFO:exsclaim.tool.JournalScraper:>>> (1 of 15) Extracting figures from: s41467-020-15259-z
+INFO:exsclaim.journal:7
+INFO:exsclaim.tool.JournalScraper:>>> (2 of 15) Extracting figures from: s41598-024-80384-4
+INFO:exsclaim.journal:12
+INFO:exsclaim.tool.JournalScraper:>>> (3 of 15) Extracting figures from: s41467-025-56197-y
+INFO:exsclaim.journal:8
+INFO:exsclaim.tool.JournalScraper:>>> (4 of 15) Extracting figures from: s41467-017-02559-0
+INFO:exsclaim.journal:5
+INFO:exsclaim.tool.JournalScraper:>>> (5 of 15) Extracting figures from: s41467-024-49700-4
+INFO:exsclaim.journal:10
+INFO:exsclaim.tool.JournalScraper:>>> (6 of 15) Extracting figures from: s41467-019-12612-9
+INFO:exsclaim.journal:6
+INFO:exsclaim.tool.JournalScraper:>>> (7 of 15) Extracting figures from: s41467-024-45254-7
+INFO:exsclaim.journal:10
+INFO:exsclaim.tool.JournalScraper:>>> (8 of 15) Extracting figures from: s41541-025-01086-0
+INFO:exsclaim.journal:8
+INFO:exsclaim.tool.JournalScraper:>>> (9 of 15) Extracting figures from: s41467-025-57141-w
+INFO:exsclaim.journal:4
+INFO:exsclaim.tool.JournalScraper:>>> (10 of 15) Extracting figures from: s41467-025-57152-7
+INFO:exsclaim.journal:6
+INFO:exsclaim.tool.JournalScraper:>>> (11 of 15) Extracting figures from: s41467-025-56257-3
+INFO:exsclaim.journal:6
+INFO:exsclaim.tool.JournalScraper:>>> (12 of 15) Extracting figures from: s41467-025-56889-5
+INFO:exsclaim.journal:4
+INFO:exsclaim.tool.JournalScraper:>>> (13 of 15) Extracting figures from: s41467-020-17698-0
+INFO:exsclaim.journal:5
+INFO:exsclaim.tool.JournalScraper:>>> (14 of 15) Extracting figures from: s41467-023-36391-6
+INFO:exsclaim.journal:7
+INFO:exsclaim.tool.JournalScraper:>>> (15 of 15) Extracting figures from: s41467-025-57278-8
+INFO:exsclaim.journal:6
+INFO:exsclaim.tool.JournalScraper:>>> Time Elapsed: 302.14 sec (15 articles)
+
+INFO:exsclaim.tool:Running HTML Scraper
+
+INFO:exsclaim.tool:>>> Time Elapsed: 0.00 sec (0 articles)
+
+INFO:exsclaim.tool.CaptionDistributor:Running Caption Distributor
+
+INFO:exsclaim.tool.CaptionDistributor:>>> (1 of 94) Parsing captions from: s41467-020-15259-z_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-020-15259-z_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (2 of 94) Parsing captions from: s41467-020-15259-z_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-020-15259-z_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (3 of 94) Parsing captions from: s41467-020-15259-z_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-020-15259-z_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (4 of 94) Parsing captions from: s41467-020-15259-z_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-020-15259-z_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (5 of 94) Parsing captions from: s41467-020-15259-z_fig5.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-020-15259-z_fig5.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (6 of 94) Parsing captions from: s41467-020-15259-z_fig6.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-020-15259-z_fig6.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (7 of 94) Parsing captions from: s41598-024-80384-4_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41598-024-80384-4_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (8 of 94) Parsing captions from: s41598-024-80384-4_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41598-024-80384-4_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (9 of 94) Parsing captions from: s41598-024-80384-4_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41598-024-80384-4_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (10 of 94) Parsing captions from: s41598-024-80384-4_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41598-024-80384-4_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (11 of 94) Parsing captions from: s41598-024-80384-4_fig5.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41598-024-80384-4_fig5.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (12 of 94) Parsing captions from: s41598-024-80384-4_fig6.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41598-024-80384-4_fig6.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (13 of 94) Parsing captions from: s41598-024-80384-4_fig7.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41598-024-80384-4_fig7.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (14 of 94) Parsing captions from: s41467-025-56197-y_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56197-y_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (15 of 94) Parsing captions from: s41467-025-56197-y_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56197-y_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (16 of 94) Parsing captions from: s41467-025-56197-y_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56197-y_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (17 of 94) Parsing captions from: s41467-025-56197-y_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56197-y_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (18 of 94) Parsing captions from: s41467-025-56197-y_fig5.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56197-y_fig5.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (19 of 94) Parsing captions from: s41467-025-56197-y_fig6.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56197-y_fig6.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (20 of 94) Parsing captions from: s41467-025-56197-y_fig7.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56197-y_fig7.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (21 of 94) Parsing captions from: s41467-025-56197-y_fig8.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56197-y_fig8.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (22 of 94) Parsing captions from: s41467-017-02559-0_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-017-02559-0_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (23 of 94) Parsing captions from: s41467-017-02559-0_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-017-02559-0_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (24 of 94) Parsing captions from: s41467-017-02559-0_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-017-02559-0_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (25 of 94) Parsing captions from: s41467-017-02559-0_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-017-02559-0_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (26 of 94) Parsing captions from: s41467-017-02559-0_fig5.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-017-02559-0_fig5.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (27 of 94) Parsing captions from: s41467-024-49700-4_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-49700-4_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (28 of 94) Parsing captions from: s41467-024-49700-4_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-49700-4_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (29 of 94) Parsing captions from: s41467-024-49700-4_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-49700-4_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (30 of 94) Parsing captions from: s41467-024-49700-4_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-49700-4_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (31 of 94) Parsing captions from: s41467-024-49700-4_fig5.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-49700-4_fig5.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (32 of 94) Parsing captions from: s41467-024-49700-4_fig6.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-49700-4_fig6.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (33 of 94) Parsing captions from: s41467-024-49700-4_fig7.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-49700-4_fig7.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (34 of 94) Parsing captions from: s41467-024-49700-4_fig8.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-49700-4_fig8.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (35 of 94) Parsing captions from: s41467-019-12612-9_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-019-12612-9_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (36 of 94) Parsing captions from: s41467-019-12612-9_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-019-12612-9_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (37 of 94) Parsing captions from: s41467-019-12612-9_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-019-12612-9_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (38 of 94) Parsing captions from: s41467-019-12612-9_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-019-12612-9_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (39 of 94) Parsing captions from: s41467-019-12612-9_fig5.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-019-12612-9_fig5.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (40 of 94) Parsing captions from: s41467-024-45254-7_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-45254-7_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (41 of 94) Parsing captions from: s41467-024-45254-7_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-45254-7_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (42 of 94) Parsing captions from: s41467-024-45254-7_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-45254-7_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (43 of 94) Parsing captions from: s41467-024-45254-7_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-45254-7_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (44 of 94) Parsing captions from: s41467-024-45254-7_fig5.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-45254-7_fig5.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (45 of 94) Parsing captions from: s41467-024-45254-7_fig6.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-45254-7_fig6.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (46 of 94) Parsing captions from: s41467-024-45254-7_fig7.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-45254-7_fig7.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (47 of 94) Parsing captions from: s41467-024-45254-7_fig8.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-45254-7_fig8.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (48 of 94) Parsing captions from: s41467-024-45254-7_fig9.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-45254-7_fig9.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (49 of 94) Parsing captions from: s41467-024-45254-7_fig10.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-024-45254-7_fig10.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (50 of 94) Parsing captions from: s41541-025-01086-0_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41541-025-01086-0_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (51 of 94) Parsing captions from: s41541-025-01086-0_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41541-025-01086-0_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (52 of 94) Parsing captions from: s41541-025-01086-0_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41541-025-01086-0_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (53 of 94) Parsing captions from: s41541-025-01086-0_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41541-025-01086-0_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (54 of 94) Parsing captions from: s41541-025-01086-0_fig5.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41541-025-01086-0_fig5.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (55 of 94) Parsing captions from: s41541-025-01086-0_fig6.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41541-025-01086-0_fig6.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (56 of 94) Parsing captions from: s41541-025-01086-0_fig7.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41541-025-01086-0_fig7.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (57 of 94) Parsing captions from: s41541-025-01086-0_fig8.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41541-025-01086-0_fig8.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (58 of 94) Parsing captions from: s41467-025-57141-w_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57141-w_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (59 of 94) Parsing captions from: s41467-025-57141-w_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57141-w_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (60 of 94) Parsing captions from: s41467-025-57141-w_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57141-w_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (61 of 94) Parsing captions from: s41467-025-57141-w_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57141-w_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (62 of 94) Parsing captions from: s41467-025-57152-7_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57152-7_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (63 of 94) Parsing captions from: s41467-025-57152-7_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57152-7_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (64 of 94) Parsing captions from: s41467-025-57152-7_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57152-7_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (65 of 94) Parsing captions from: s41467-025-57152-7_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57152-7_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (66 of 94) Parsing captions from: s41467-025-57152-7_fig5.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57152-7_fig5.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (67 of 94) Parsing captions from: s41467-025-57152-7_fig6.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57152-7_fig6.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (68 of 94) Parsing captions from: s41467-025-56257-3_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56257-3_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (69 of 94) Parsing captions from: s41467-025-56257-3_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56257-3_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (70 of 94) Parsing captions from: s41467-025-56257-3_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56257-3_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (71 of 94) Parsing captions from: s41467-025-56257-3_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56257-3_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (72 of 94) Parsing captions from: s41467-025-56257-3_fig5.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56257-3_fig5.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (73 of 94) Parsing captions from: s41467-025-56257-3_fig6.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56257-3_fig6.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (74 of 94) Parsing captions from: s41467-025-56889-5_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56889-5_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (75 of 94) Parsing captions from: s41467-025-56889-5_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56889-5_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (76 of 94) Parsing captions from: s41467-025-56889-5_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56889-5_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (77 of 94) Parsing captions from: s41467-025-56889-5_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-56889-5_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (78 of 94) Parsing captions from: s41467-020-17698-0_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-020-17698-0_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (79 of 94) Parsing captions from: s41467-020-17698-0_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-020-17698-0_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (80 of 94) Parsing captions from: s41467-020-17698-0_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-020-17698-0_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (81 of 94) Parsing captions from: s41467-020-17698-0_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-020-17698-0_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (82 of 94) Parsing captions from: s41467-020-17698-0_fig5.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-020-17698-0_fig5.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (83 of 94) Parsing captions from: s41467-023-36391-6_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-023-36391-6_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (84 of 94) Parsing captions from: s41467-023-36391-6_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-023-36391-6_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (85 of 94) Parsing captions from: s41467-023-36391-6_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-023-36391-6_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (86 of 94) Parsing captions from: s41467-023-36391-6_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-023-36391-6_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (87 of 94) Parsing captions from: s41467-023-36391-6_fig5.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-023-36391-6_fig5.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (88 of 94) Parsing captions from: s41467-023-36391-6_fig6.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-023-36391-6_fig6.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (89 of 94) Parsing captions from: s41467-025-57278-8_fig1.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57278-8_fig1.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (90 of 94) Parsing captions from: s41467-025-57278-8_fig2.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57278-8_fig2.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (91 of 94) Parsing captions from: s41467-025-57278-8_fig3.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57278-8_fig3.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (92 of 94) Parsing captions from: s41467-025-57278-8_fig4.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57278-8_fig4.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (93 of 94) Parsing captions from: s41467-025-57278-8_fig5.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57278-8_fig5.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> (94 of 94) Parsing captions from: s41467-025-57278-8_fig6.jpg
+ERROR:exsclaim.tool.CaptionDistributor:<!> ERROR: An exception occurred in CaptionDistributor on figue: s41467-025-57278-8_fig6.jpg
+Traceback (most recent call last):
+  File "/home/j/jayaverma/exsclaim/exsclaim/tool.py", line 916, in run
+    llm = search_query["llm"]
+          ~~~~~~~~~~~~^^^^^^^
+KeyError: 'llm'
+INFO:exsclaim.tool.CaptionDistributor:>>> Time Elapsed: 0.03 sec (94 captions)
+
+INFO:exsclaim.figure:Running Figure Separator
+
+INFO:exsclaim.figure:>>> (1 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-020-15259-z_fig1.jpg
+INFO:exsclaim.figure:>>> (2 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-020-15259-z_fig2.jpg
+INFO:exsclaim.figure:>>> (3 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-020-15259-z_fig3.jpg
+INFO:exsclaim.figure:>>> (4 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-020-15259-z_fig4.jpg
+INFO:exsclaim.figure:>>> (5 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-020-15259-z_fig5.jpg
+INFO:exsclaim.figure:>>> (6 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-020-15259-z_fig6.jpg
+INFO:exsclaim.figure:>>> (7 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41598-024-80384-4_fig1.jpg
+INFO:exsclaim.figure:>>> (8 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41598-024-80384-4_fig2.jpg
+INFO:exsclaim.figure:>>> (9 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41598-024-80384-4_fig3.jpg
+INFO:exsclaim.figure:>>> (10 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41598-024-80384-4_fig4.jpg
+INFO:exsclaim.figure:>>> (11 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41598-024-80384-4_fig5.jpg
+INFO:exsclaim.figure:>>> (12 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41598-024-80384-4_fig6.jpg
+INFO:exsclaim.figure:>>> (13 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41598-024-80384-4_fig7.jpg
+INFO:exsclaim.figure:>>> (14 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56197-y_fig1.jpg
+INFO:exsclaim.figure:>>> (15 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56197-y_fig2.jpg
+INFO:exsclaim.figure:>>> (16 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56197-y_fig3.jpg
+INFO:exsclaim.figure:>>> (17 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56197-y_fig4.jpg
+INFO:exsclaim.figure:>>> (18 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56197-y_fig5.jpg
+INFO:exsclaim.figure:>>> (19 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56197-y_fig6.jpg
+INFO:exsclaim.figure:>>> (20 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56197-y_fig7.jpg
+INFO:exsclaim.figure:>>> (21 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56197-y_fig8.jpg
+INFO:exsclaim.figure:>>> (22 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-017-02559-0_fig1.jpg
+INFO:exsclaim.figure:>>> (23 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-017-02559-0_fig2.jpg
+INFO:exsclaim.figure:>>> (24 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-017-02559-0_fig3.jpg
+INFO:exsclaim.figure:>>> (25 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-017-02559-0_fig4.jpg
+INFO:exsclaim.figure:>>> (26 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-017-02559-0_fig5.jpg
+INFO:exsclaim.figure:>>> (27 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-49700-4_fig1.jpg
+INFO:exsclaim.figure:>>> (28 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-49700-4_fig2.jpg
+INFO:exsclaim.figure:>>> (29 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-49700-4_fig3.jpg
+INFO:exsclaim.figure:>>> (30 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-49700-4_fig4.jpg
+INFO:exsclaim.figure:>>> (31 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-49700-4_fig5.jpg
+INFO:exsclaim.figure:>>> (32 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-49700-4_fig6.jpg
+INFO:exsclaim.figure:>>> (33 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-49700-4_fig7.jpg
+INFO:exsclaim.figure:>>> (34 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-49700-4_fig8.jpg
+INFO:exsclaim.figure:>>> (35 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-019-12612-9_fig1.jpg
+INFO:exsclaim.figure:>>> (36 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-019-12612-9_fig2.jpg
+INFO:exsclaim.figure:>>> (37 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-019-12612-9_fig3.jpg
+INFO:exsclaim.figure:>>> (38 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-019-12612-9_fig4.jpg
+INFO:exsclaim.figure:>>> (39 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-019-12612-9_fig5.jpg
+INFO:exsclaim.figure:>>> (40 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-45254-7_fig1.jpg
+INFO:exsclaim.figure:>>> (41 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-45254-7_fig2.jpg
+INFO:exsclaim.figure:>>> (42 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-45254-7_fig3.jpg
+INFO:exsclaim.figure:>>> (43 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-45254-7_fig4.jpg
+INFO:exsclaim.figure:>>> (44 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-45254-7_fig5.jpg
+INFO:exsclaim.figure:>>> (45 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-45254-7_fig6.jpg
+INFO:exsclaim.figure:>>> (46 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-45254-7_fig7.jpg
+INFO:exsclaim.figure:>>> (47 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-45254-7_fig8.jpg
+INFO:exsclaim.figure:>>> (48 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-45254-7_fig9.jpg
+INFO:exsclaim.figure:>>> (49 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-024-45254-7_fig10.jpg
+INFO:exsclaim.figure:>>> (50 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41541-025-01086-0_fig1.jpg
+INFO:exsclaim.figure:>>> (51 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41541-025-01086-0_fig2.jpg
+INFO:exsclaim.figure:>>> (52 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41541-025-01086-0_fig3.jpg
+INFO:exsclaim.figure:>>> (53 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41541-025-01086-0_fig4.jpg
+INFO:exsclaim.figure:>>> (54 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41541-025-01086-0_fig5.jpg
+INFO:exsclaim.figure:>>> (55 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41541-025-01086-0_fig6.jpg
+INFO:exsclaim.figure:>>> (56 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41541-025-01086-0_fig7.jpg
+INFO:exsclaim.figure:>>> (57 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41541-025-01086-0_fig8.jpg
+INFO:exsclaim.figure:>>> (58 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57141-w_fig1.jpg
+INFO:exsclaim.figure:>>> (59 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57141-w_fig2.jpg
+INFO:exsclaim.figure:>>> (60 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57141-w_fig3.jpg
+INFO:exsclaim.figure:>>> (61 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57141-w_fig4.jpg
+INFO:exsclaim.figure:>>> (62 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57152-7_fig1.jpg
+INFO:exsclaim.figure:>>> (63 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57152-7_fig2.jpg
+INFO:exsclaim.figure:>>> (64 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57152-7_fig3.jpg
+INFO:exsclaim.figure:>>> (65 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57152-7_fig4.jpg
+INFO:exsclaim.figure:>>> (66 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57152-7_fig5.jpg
+INFO:exsclaim.figure:>>> (67 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57152-7_fig6.jpg
+INFO:exsclaim.figure:>>> (68 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56257-3_fig1.jpg
+INFO:exsclaim.figure:>>> (69 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56257-3_fig2.jpg
+INFO:exsclaim.figure:>>> (70 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56257-3_fig3.jpg
+INFO:exsclaim.figure:>>> (71 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56257-3_fig4.jpg
+INFO:exsclaim.figure:>>> (72 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56257-3_fig5.jpg
+INFO:exsclaim.figure:>>> (73 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56257-3_fig6.jpg
+INFO:exsclaim.figure:>>> (74 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56889-5_fig1.jpg
+INFO:exsclaim.figure:>>> (75 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56889-5_fig2.jpg
+INFO:exsclaim.figure:>>> (76 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56889-5_fig3.jpg
+INFO:exsclaim.figure:>>> (77 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-56889-5_fig4.jpg
+INFO:exsclaim.figure:>>> (78 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-020-17698-0_fig1.jpg
+INFO:exsclaim.figure:>>> (79 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-020-17698-0_fig2.jpg
+INFO:exsclaim.figure:>>> (80 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-020-17698-0_fig3.jpg
+INFO:exsclaim.figure:>>> (81 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-020-17698-0_fig4.jpg
+INFO:exsclaim.figure:>>> (82 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-020-17698-0_fig5.jpg
+INFO:exsclaim.figure:>>> (83 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-023-36391-6_fig1.jpg
+INFO:exsclaim.figure:>>> (84 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-023-36391-6_fig2.jpg
+INFO:exsclaim.figure:>>> (85 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-023-36391-6_fig3.jpg
+INFO:exsclaim.figure:>>> (86 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-023-36391-6_fig4.jpg
+INFO:exsclaim.figure:>>> (87 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-023-36391-6_fig5.jpg
+INFO:exsclaim.figure:>>> (88 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-023-36391-6_fig6.jpg
+INFO:exsclaim.figure:>>> (89 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57278-8_fig1.jpg
+INFO:exsclaim.figure:>>> (90 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57278-8_fig2.jpg
+INFO:exsclaim.figure:>>> (91 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57278-8_fig3.jpg
+INFO:exsclaim.figure:>>> (92 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57278-8_fig4.jpg
+INFO:exsclaim.figure:>>> (93 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57278-8_fig5.jpg
+INFO:exsclaim.figure:>>> (94 of 94) Extracting images from: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/figures/s41467-025-57278-8_fig6.jpg
+INFO:exsclaim.figure:>>> Time Elapsed: 546.42 sec (94 figures)
+
+INFO:exsclaim.pipeline:Matching Image Objects to Caption Text
+
+INFO:exsclaim.pipeline:>>> (1 of 94) Matching objects from figure: s41467-020-15259-z_fig1.jpg
+INFO:exsclaim.pipeline:>>> (2 of 94) Matching objects from figure: s41467-020-15259-z_fig2.jpg
+INFO:exsclaim.pipeline:>>> (3 of 94) Matching objects from figure: s41467-020-15259-z_fig3.jpg
+INFO:exsclaim.pipeline:>>> (4 of 94) Matching objects from figure: s41467-020-15259-z_fig4.jpg
+INFO:exsclaim.pipeline:>>> (5 of 94) Matching objects from figure: s41467-020-15259-z_fig5.jpg
+INFO:exsclaim.pipeline:>>> (6 of 94) Matching objects from figure: s41467-020-15259-z_fig6.jpg
+INFO:exsclaim.pipeline:>>> (7 of 94) Matching objects from figure: s41598-024-80384-4_fig1.jpg
+INFO:exsclaim.pipeline:>>> (8 of 94) Matching objects from figure: s41598-024-80384-4_fig2.jpg
+INFO:exsclaim.pipeline:>>> (9 of 94) Matching objects from figure: s41598-024-80384-4_fig3.jpg
+INFO:exsclaim.pipeline:>>> (10 of 94) Matching objects from figure: s41598-024-80384-4_fig4.jpg
+INFO:exsclaim.pipeline:>>> (11 of 94) Matching objects from figure: s41598-024-80384-4_fig5.jpg
+INFO:exsclaim.pipeline:>>> (12 of 94) Matching objects from figure: s41598-024-80384-4_fig6.jpg
+INFO:exsclaim.pipeline:>>> (13 of 94) Matching objects from figure: s41598-024-80384-4_fig7.jpg
+INFO:exsclaim.pipeline:>>> (14 of 94) Matching objects from figure: s41467-025-56197-y_fig1.jpg
+INFO:exsclaim.pipeline:>>> (15 of 94) Matching objects from figure: s41467-025-56197-y_fig2.jpg
+INFO:exsclaim.pipeline:>>> (16 of 94) Matching objects from figure: s41467-025-56197-y_fig3.jpg
+INFO:exsclaim.pipeline:>>> (17 of 94) Matching objects from figure: s41467-025-56197-y_fig4.jpg
+INFO:exsclaim.pipeline:>>> (18 of 94) Matching objects from figure: s41467-025-56197-y_fig5.jpg
+INFO:exsclaim.pipeline:>>> (19 of 94) Matching objects from figure: s41467-025-56197-y_fig6.jpg
+INFO:exsclaim.pipeline:>>> (20 of 94) Matching objects from figure: s41467-025-56197-y_fig7.jpg
+INFO:exsclaim.pipeline:>>> (21 of 94) Matching objects from figure: s41467-025-56197-y_fig8.jpg
+INFO:exsclaim.pipeline:>>> (22 of 94) Matching objects from figure: s41467-017-02559-0_fig1.jpg
+INFO:exsclaim.pipeline:>>> (23 of 94) Matching objects from figure: s41467-017-02559-0_fig2.jpg
+INFO:exsclaim.pipeline:>>> (24 of 94) Matching objects from figure: s41467-017-02559-0_fig3.jpg
+INFO:exsclaim.pipeline:>>> (25 of 94) Matching objects from figure: s41467-017-02559-0_fig4.jpg
+INFO:exsclaim.pipeline:>>> (26 of 94) Matching objects from figure: s41467-017-02559-0_fig5.jpg
+INFO:exsclaim.pipeline:>>> (27 of 94) Matching objects from figure: s41467-024-49700-4_fig1.jpg
+INFO:exsclaim.pipeline:>>> (28 of 94) Matching objects from figure: s41467-024-49700-4_fig2.jpg
+INFO:exsclaim.pipeline:>>> (29 of 94) Matching objects from figure: s41467-024-49700-4_fig3.jpg
+INFO:exsclaim.pipeline:>>> (30 of 94) Matching objects from figure: s41467-024-49700-4_fig4.jpg
+INFO:exsclaim.pipeline:>>> (31 of 94) Matching objects from figure: s41467-024-49700-4_fig5.jpg
+INFO:exsclaim.pipeline:>>> (32 of 94) Matching objects from figure: s41467-024-49700-4_fig6.jpg
+INFO:exsclaim.pipeline:>>> (33 of 94) Matching objects from figure: s41467-024-49700-4_fig7.jpg
+INFO:exsclaim.pipeline:>>> (34 of 94) Matching objects from figure: s41467-024-49700-4_fig8.jpg
+INFO:exsclaim.pipeline:>>> (35 of 94) Matching objects from figure: s41467-019-12612-9_fig1.jpg
+INFO:exsclaim.pipeline:>>> (36 of 94) Matching objects from figure: s41467-019-12612-9_fig2.jpg
+INFO:exsclaim.pipeline:>>> (37 of 94) Matching objects from figure: s41467-019-12612-9_fig3.jpg
+INFO:exsclaim.pipeline:>>> (38 of 94) Matching objects from figure: s41467-019-12612-9_fig4.jpg
+INFO:exsclaim.pipeline:>>> (39 of 94) Matching objects from figure: s41467-019-12612-9_fig5.jpg
+INFO:exsclaim.pipeline:>>> (40 of 94) Matching objects from figure: s41467-024-45254-7_fig1.jpg
+INFO:exsclaim.pipeline:>>> (41 of 94) Matching objects from figure: s41467-024-45254-7_fig2.jpg
+INFO:exsclaim.pipeline:>>> (42 of 94) Matching objects from figure: s41467-024-45254-7_fig3.jpg
+INFO:exsclaim.pipeline:>>> (43 of 94) Matching objects from figure: s41467-024-45254-7_fig4.jpg
+INFO:exsclaim.pipeline:>>> (44 of 94) Matching objects from figure: s41467-024-45254-7_fig5.jpg
+INFO:exsclaim.pipeline:>>> (45 of 94) Matching objects from figure: s41467-024-45254-7_fig6.jpg
+INFO:exsclaim.pipeline:>>> (46 of 94) Matching objects from figure: s41467-024-45254-7_fig7.jpg
+INFO:exsclaim.pipeline:>>> (47 of 94) Matching objects from figure: s41467-024-45254-7_fig8.jpg
+INFO:exsclaim.pipeline:>>> (48 of 94) Matching objects from figure: s41467-024-45254-7_fig9.jpg
+INFO:exsclaim.pipeline:>>> (49 of 94) Matching objects from figure: s41467-024-45254-7_fig10.jpg
+INFO:exsclaim.pipeline:>>> (50 of 94) Matching objects from figure: s41541-025-01086-0_fig1.jpg
+INFO:exsclaim.pipeline:>>> (51 of 94) Matching objects from figure: s41541-025-01086-0_fig2.jpg
+INFO:exsclaim.pipeline:>>> (52 of 94) Matching objects from figure: s41541-025-01086-0_fig3.jpg
+INFO:exsclaim.pipeline:>>> (53 of 94) Matching objects from figure: s41541-025-01086-0_fig4.jpg
+INFO:exsclaim.pipeline:>>> (54 of 94) Matching objects from figure: s41541-025-01086-0_fig5.jpg
+INFO:exsclaim.pipeline:>>> (55 of 94) Matching objects from figure: s41541-025-01086-0_fig6.jpg
+INFO:exsclaim.pipeline:>>> (56 of 94) Matching objects from figure: s41541-025-01086-0_fig7.jpg
+INFO:exsclaim.pipeline:>>> (57 of 94) Matching objects from figure: s41541-025-01086-0_fig8.jpg
+INFO:exsclaim.pipeline:>>> (58 of 94) Matching objects from figure: s41467-025-57141-w_fig1.jpg
+INFO:exsclaim.pipeline:>>> (59 of 94) Matching objects from figure: s41467-025-57141-w_fig2.jpg
+INFO:exsclaim.pipeline:>>> (60 of 94) Matching objects from figure: s41467-025-57141-w_fig3.jpg
+INFO:exsclaim.pipeline:>>> (61 of 94) Matching objects from figure: s41467-025-57141-w_fig4.jpg
+INFO:exsclaim.pipeline:>>> (62 of 94) Matching objects from figure: s41467-025-57152-7_fig1.jpg
+INFO:exsclaim.pipeline:>>> (63 of 94) Matching objects from figure: s41467-025-57152-7_fig2.jpg
+INFO:exsclaim.pipeline:>>> (64 of 94) Matching objects from figure: s41467-025-57152-7_fig3.jpg
+INFO:exsclaim.pipeline:>>> (65 of 94) Matching objects from figure: s41467-025-57152-7_fig4.jpg
+INFO:exsclaim.pipeline:>>> (66 of 94) Matching objects from figure: s41467-025-57152-7_fig5.jpg
+INFO:exsclaim.pipeline:>>> (67 of 94) Matching objects from figure: s41467-025-57152-7_fig6.jpg
+INFO:exsclaim.pipeline:>>> (68 of 94) Matching objects from figure: s41467-025-56257-3_fig1.jpg
+INFO:exsclaim.pipeline:>>> (69 of 94) Matching objects from figure: s41467-025-56257-3_fig2.jpg
+INFO:exsclaim.pipeline:>>> (70 of 94) Matching objects from figure: s41467-025-56257-3_fig3.jpg
+INFO:exsclaim.pipeline:>>> (71 of 94) Matching objects from figure: s41467-025-56257-3_fig4.jpg
+INFO:exsclaim.pipeline:>>> (72 of 94) Matching objects from figure: s41467-025-56257-3_fig5.jpg
+INFO:exsclaim.pipeline:>>> (73 of 94) Matching objects from figure: s41467-025-56257-3_fig6.jpg
+INFO:exsclaim.pipeline:>>> (74 of 94) Matching objects from figure: s41467-025-56889-5_fig1.jpg
+INFO:exsclaim.pipeline:>>> (75 of 94) Matching objects from figure: s41467-025-56889-5_fig2.jpg
+INFO:exsclaim.pipeline:>>> (76 of 94) Matching objects from figure: s41467-025-56889-5_fig3.jpg
+INFO:exsclaim.pipeline:>>> (77 of 94) Matching objects from figure: s41467-025-56889-5_fig4.jpg
+INFO:exsclaim.pipeline:>>> (78 of 94) Matching objects from figure: s41467-020-17698-0_fig1.jpg
+INFO:exsclaim.pipeline:>>> (79 of 94) Matching objects from figure: s41467-020-17698-0_fig2.jpg
+INFO:exsclaim.pipeline:>>> (80 of 94) Matching objects from figure: s41467-020-17698-0_fig3.jpg
+INFO:exsclaim.pipeline:>>> (81 of 94) Matching objects from figure: s41467-020-17698-0_fig4.jpg
+INFO:exsclaim.pipeline:>>> (82 of 94) Matching objects from figure: s41467-020-17698-0_fig5.jpg
+INFO:exsclaim.pipeline:>>> (83 of 94) Matching objects from figure: s41467-023-36391-6_fig1.jpg
+INFO:exsclaim.pipeline:>>> (84 of 94) Matching objects from figure: s41467-023-36391-6_fig2.jpg
+INFO:exsclaim.pipeline:>>> (85 of 94) Matching objects from figure: s41467-023-36391-6_fig3.jpg
+INFO:exsclaim.pipeline:>>> (86 of 94) Matching objects from figure: s41467-023-36391-6_fig4.jpg
+INFO:exsclaim.pipeline:>>> (87 of 94) Matching objects from figure: s41467-023-36391-6_fig5.jpg
+INFO:exsclaim.pipeline:>>> (88 of 94) Matching objects from figure: s41467-023-36391-6_fig6.jpg
+INFO:exsclaim.pipeline:>>> (89 of 94) Matching objects from figure: s41467-025-57278-8_fig1.jpg
+INFO:exsclaim.pipeline:>>> (90 of 94) Matching objects from figure: s41467-025-57278-8_fig2.jpg
+INFO:exsclaim.pipeline:>>> (91 of 94) Matching objects from figure: s41467-025-57278-8_fig3.jpg
+INFO:exsclaim.pipeline:>>> (92 of 94) Matching objects from figure: s41467-025-57278-8_fig4.jpg
+INFO:exsclaim.pipeline:>>> (93 of 94) Matching objects from figure: s41467-025-57278-8_fig5.jpg
+INFO:exsclaim.pipeline:>>> (94 of 94) Matching objects from figure: s41467-025-57278-8_fig6.jpg
+INFO:exsclaim.pipeline:>>> SUCCESS!
+
+INFO:exsclaim.pipeline:Printing Master Image Objects to: /home/j/jayaverma/exsclaim/output/demo_nature_polymer_protein_complex_15/images
+
+INFO:exsclaim.pipeline:>>> SUCCESS!
+

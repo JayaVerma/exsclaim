@@ -530,8 +530,12 @@ class JournalFamilyDynamic(JournalFamily):
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
         #options.add_argument("--remote-debugging-port=9222")
-        options.binary_location = "/gpfs/fs1/home/avriza/chrome/opt/google/chrome/google-chrome"
-        self.driver = webdriver.Chrome(service=Service('/gpfs/fs1/home/avriza/chromedriver'), options=options)
+
+        driver_path = "/home/j/jayaverma/exsclaim/chromedriver/chromedriver"
+
+        service = Service(driver_path)
+        options.binary_location = "/home/j/jayaverma/exsclaim/chrome/opt/google/chrome/google-chrome"
+        self.driver = webdriver.Chrome(service=service, options=options)
 
 
         stealth(self.driver,
@@ -612,9 +616,11 @@ class JournalFamilyDynamic(JournalFamily):
         #options.add_argument("start-maximized")
         #options.add_experimental_option("excludeSwitches", ["enable-automation"])
         #options.add_experimental_option('useAutomationExtension', False)
-        options.binary_location = "/gpfs/fs1/home/avriza/chrome/opt/google/chrome/google-chrome"
-        driver = webdriver.Chrome(service=Service('/gpfs/fs1/home/avriza/chromedriver'), options=options)
+        driver_path = "/home/j/jayaverma/exsclaim/chromedriver/chromedriver"
 
+        service = Service(driver_path)
+        options.binary_location = "/home/j/jayaverma/exsclaim/chrome/opt/google/chrome/google-chrome"
+        driver = webdriver.Chrome(service=service, options=options)
         stealth(driver,
               languages=["en-US", "en"],
               vendor="Google Inc.",
@@ -840,8 +846,14 @@ class ACS(JournalFamilyDynamic):
         #options.add_argument("start-maximized")
         #options.add_experimental_option("excludeSwitches", ["enable-automation"])
         #options.add_experimental_option('useAutomationExtension', False)
-        options.binary_location = "/gpfs/fs1/home/avriza/chrome/opt/google/chrome/google-chrome"
-        driver = webdriver.Chrome(service=Service('/gpfs/fs1/home/avriza/chromedriver'), options=options)
+
+        driver_path = "/home/j/jayaverma/exsclaim/chromedriver/chromedriver"
+
+        service = Service(driver_path)
+        options.binary_location = "/home/j/jayaverma/exsclaim/chrome/opt/google/chrome/google-chrome"
+        driver = webdriver.Chrome(service=service, options=options)
+        #options.binary_location = "/gpfs/fs1/home/avriza/chrome/opt/google/chrome/google-chrome"
+        #driver = webdriver.Chrome(service=Service('/gpfs/fs1/home/avriza/chromedriver'), options=options)
 
         stealth(driver,
               languages=["en-US", "en"],
@@ -851,13 +863,25 @@ class ACS(JournalFamilyDynamic):
               renderer="Intel Iris OpenGL Engine",
               fix_hairline=True,
               )
-        #print('journal url', url)
+        print('journal url', url)
         driver.get(url)
-        #time.sleep(5)
-      
+        time.sleep(30)
+
+
+        try:
+            # Wait up to 30 seconds for the element to be present
+            element = WebDriverWait(driver, 30).until(
+                EC.presence_of_element_located((By.CLASS_NAME, 'result__count'))
+            )
+            total_results = int(element.text)
+        except Exception as e:
+            print(f"Error finding result count: {e}")
+            driver.close()
+            return 0, 0, 0 #or raise an exception
+        
         soup = BeautifulSoup(driver.page_source, 'html.parser')
         driver.close()
-      
+        #print(soup.prettify())
         total_results = int(soup.find(class_='result__count').text)
         if total_results > 2020:
           total_results = 2020
@@ -871,6 +895,76 @@ class ACS(JournalFamilyDynamic):
         current_page = int(page_counter_list[0])
         total_pages = total_results // 20
         return current_page, total_pages, total_results
+
+
+    # def get_page_info(self, url):
+    #     options = webdriver.ChromeOptions() 
+    #     options.add_argument("--no-sandbox")  
+    #     options.add_argument("--disable-dev-shm-usage")  
+    #     options.add_argument('--headless')  
+    #     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")  # Fake user-agent
+
+    #     driver_path = "/home/j/jayaverma/exsclaim/chromedriver/chromedriver"
+    #     options.binary_location = "/home/j/jayaverma/exsclaim/chrome/opt/google/chrome/google-chrome"
+        
+    #     service = Service(driver_path)
+    #     driver = webdriver.Chrome(service=service, options=options)
+
+    #     print('journal url:', url)
+    #     driver.get(url)
+
+    #     #  **Fix 1: Scroll down to load content**
+    #     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    #     time.sleep(3)
+
+    #     #  **Fix 2: Wait explicitly for `result__count`**
+    #     try:
+    #         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, "result__count")))
+    #         print("'result__count' element found!")
+    #     except:
+    #         print(" Warning: 'result__count' did not load. Check if the page is blocking Selenium.")
+
+    #     soup = BeautifulSoup(driver.page_source, 'html.parser')
+    #     driver.close()
+
+    #     #  **Fix 3: Print the first 2000 characters to debug**
+    #     print(" Extracted HTML snippet:")
+    #     print(soup.prettify()[:2000])  
+
+    #     #  **Fix 4: Double-check the element before accessing**
+    #     result_count_tag = soup.find(class_='result__count')
+    #     if not result_count_tag:
+    #         raise ValueError(" Could not find 'result__count'. The website may be blocking bots.")
+
+    #     try:
+    #         total_results = int(result_count_tag.text.strip())
+    #     except ValueError:
+    #         raise ValueError(f" Failed to extract integer from 'result__count': {result_count_tag.text}")
+
+    #     if total_results > 2020:
+    #         total_results = 2020
+
+    #     # **Fix 3: Check if pagination exists before accessing it**
+    #     page_counter = soup.find(class_='pagination')
+    #     if not page_counter:
+    #         print("Warning: Pagination element not found. Assuming only one page.")
+    #         return 1, 1, total_results
+
+    #     page_counter_list = [page_number.text.strip() for page_number in page_counter.find_all('li')]
+
+    #     if not page_counter_list:
+    #         print("Warning: No pagination numbers found. Assuming single page.")
+    #         return 1, 1, total_results
+
+    #     try:
+    #         current_page = int(page_counter_list[0])
+    #     except ValueError:
+    #         raise ValueError(f"Failed to extract integer from pagination: {page_counter_list[0]}")
+
+    #     total_pages = total_results // 20
+
+    #     return current_page, total_pages, total_results
+
 
     def get_additional_url_arguments(self, soup):
         # rsc allows unlimited results, so no need for additoinal args

@@ -36,3 +36,5 @@ build/
 .ipynb_checkpoints/
 **/local.ini
 docs/build/
+data.tar.xz
+chrome/opt/google/chrome/chrome
